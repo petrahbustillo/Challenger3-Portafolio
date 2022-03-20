@@ -1,0 +1,702 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', 'sans-serif';
+    box-sizing: border-box;
+}
+
+.navegar {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: #eff4fd;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #212121;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+color: coral;   
+}
+
+.logo {
+    height: 100px;
+    border-radius: 35px;
+    padding: 20px 0px;    
+}
+
+
+.presentacion {
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.presentacion h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+}
+
+span {
+    color: coral;
+}
+
+.presentacion p {
+    font-size: 24px;
+    font-family: 'Courgette', cursive;
+    color: #555;
+    line-height: 32px;
+}
+
+.presentacion a {
+    font-family: 'Lato';
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+    transition: color 0.6s ease;
+}
+
+.presentacion a:hover {
+    color: #000;
+    background: #fff;
+}
+
+.imagen {
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    bottom: 18%;
+    right: 100px;
+}
+
+.imagen img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.imagen .shape {
+    width: 95%;
+    height: 100%;
+    bottom: 5%;
+}
+
+.imagen .perfil {
+    height: 355px;
+    width: 355px;
+    border-radius: 50%;
+    object-fit: cover; 
+    bottom: 40%;
+}
+
+.imagen:hover .shape {
+    bottom: 10%;
+}
+
+.imagen:hover .perfil {
+    left: 45%;
+}
+
+/*Section Portafolio*/
+.portafolio {
+    background-color:  rgba(180, 169, 18, 0.2);
+}
+.formacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.formacion li {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    height: 40vh;
+    margin: 0 1%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    border: 2px solid #e0dbdb;
+    border-radius: 10px;
+    background-image: url(./foto-azul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0dbdb;
+}
+
+.formacion li:hover {
+    border-color:coral;
+}
+
+.formacion li:active {
+    border-color:#aca90c;
+}
+
+.formacion li:hover h3{
+    font-size: 40px;
+}
+
+.formacion-descripcion {
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin: 30px 0px 0px;
+}
+
+.formacion-fecha {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    margin-top:10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Section experiencia*/
+
+.experiencia {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.experiencia li {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border: 2px solid #e0dbdb;
+    border-radius: 10px;
+    background-color: #f1f1f7;
+}
+
+.experiencia li img {
+    width: 70%;
+    padding: 20px;
+}
+
+.experiencia li:hover {
+    border-color:coral;
+}
+
+.experiencia li:active {
+    border-color:#aca90c;
+}
+.experiencia li:hover h3{
+    font-size: 40px;
+}
+
+.experiencia-descripcion {
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #181922;
+    font-weight: bold;
+}
+
+.experiencia-fecha {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    margin-top:10px;
+    color: #181922;
+    font-weight: bold;
+}
+
+/*seccion Acerca de mi*/
+.acerca-de-mi {
+    text-align: center;
+    color: #212121;   
+    margin: 30px 10px;
+    line-height: 25px;
+}
+
+hr {
+    height: 3px;
+    width: 70px;
+    text-align: center;
+    margin: 0px ;
+    background: coral;
+    position: relative; 
+    border: 0px;
+    margin: 0px auto 10px;
+}
+
+.acerca-de-mi p {
+    font-family: 'Lato';
+    font-size: 18px;
+    padding: 10px 0px 0px;
+}
+
+.acerca-de-mi p a {
+    text-decoration: none;
+}
+
+span {
+    color: coral;
+}
+
+/* seccion habilidades y pasatiempo*/
+
+.actividades {
+    background-color: #f4f6f7fa;   
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+.habilidades, .pasatiempos p  {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #212121;
+    margin: 0px 0px 5px;
+    padding: 0px 40px;
+    font-family: 'Lato';
+}
+.habilidades, .pasatiempos {
+    width: 100%;
+    height:340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.habilidad, .pasatiempo  {
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+.habilidad li, .pasatiempo li {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    height: 174px;
+    margin: 20px 2%;
+    padding: 10px 0px 0px;
+    border-radius: 6px;
+    /*border: solid rgba(0, 0, 0, 0.05)
+    ;*/
+    background-color: #eeb61cf3;
+}
+
+.habilidad img, .pasatiempo img {
+    width: 60px; 
+ }
+
+.habilidad p, .pasatiempo p  {/*Tarjetas de habilidades, pasatiempo*/
+    color: #212121;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px 5px;
+}
+
+h3 { 
+    font-size: 30px;
+    color: #212121; 
+    padding: 0px;
+    margin: 18px 0px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lato'; 
+}
+
+h4 {
+   font-size: 20px;
+   color: #212121;
+   padding: 0px 0px 5px; 
+   font-family: 'Lato';
+}
+
+/*seccion fondo de formulario*/
+
+.formulario {
+    background: #fff;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./fondo-ondas.jpg);
+    background-size: cover;
+    background-position-y: center; 
+    padding: 30px 0px 0px;
+    margin: 0px 0px 0px;
+}
+
+.form {
+    position: relative;
+    width: 550px;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px 20px 0px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 6px;
+    font-family: 'Open sans';
+    margin-top: 80px;
+    margin-bottom: 8%;
+    left: 35%;
+}
+
+.form-input {
+    font-family: inherit;
+    font-size: 20px;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 4px;
+} 
+
+h2 {
+    color: #212121;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    padding: 20px 0px 0px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+textarea {
+   min-height: 100px;
+   max-height: 200px;
+   max-width: 100%;
+}
+
+.form-cta {
+    background: #252b35;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+}
+
+.form-cta:hover {
+    cursor: pointer;
+    background: coral;
+}
+
+/*Section footer contacto*/
+.contacto {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    flex-direction: column;
+    background:  #212121;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contacto .social  {
+    margin-top: 50px;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contacto .social li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.contacto .social a { 
+    color: #fff;
+    text-decoration: none;   
+}
+ .contacto .social i.fa {
+    font-size: 36px;
+    padding: 0px 0px;
+    transition: 0.3s;   
+}
+
+.social i.fa:hover {
+    color:#918f8f;
+}
+
+.copyright {
+    color:#fff;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+    padding: 20px 0px 0px;
+}
+/*media responsive*/
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+        position: static;
+        text-align: center;
+    }
+
+    .logo {
+        height: 60px;
+        padding: 10px 0px;
+    }
+
+    .imagen {
+        width: 51%;
+        height: 27%;
+        bottom: 60%;
+        right: 75px;
+    }
+
+    .imagen img {
+        transition: bottom 1.5s, left 1.5s;
+    }
+
+    .imagen .shape {
+        width: 98%;
+        height: 54%;
+        bottom: 0%;
+    }
+
+    .imagen .perfil {
+        height: 115px;
+        width: 115px;
+        bottom: 0%;
+        object-fit: cover;
+    }
+    
+    .presentacion {
+        margin-left: 2%;
+        margin-top: 45%;
+        text-align: center;
+    }
+
+    .presentacion h1 {
+        font-size: 20px;
+    }
+    
+    .presentacion p {
+        font-size: 16px;
+    }
+
+    .presentacion a {
+        padding: 10px 13px;
+        margin: 18px 0px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    .formacion  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        padding: 10px;
+        height: 500px; 
+       }
+       
+    .formacion li {
+           height: 18vh;
+           padding: 10px 0px 0px;
+       }
+   
+    .formacion-descripcion {
+           margin: 0px 10px;
+           font-size: 14px;
+       }
+   
+    .formacion-fecha {
+           margin: 5px;
+           font-size: 12px;
+       }
+       
+/*Section experiencia*/
+    .experiencia {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        padding: 10px;
+    }
+    
+    .experiencia li {
+          width: 150px;
+          margin: 10px;
+          padding: 10px;
+        }
+        
+    .experiencia-descripcion {
+            font-size: 14px;
+        }
+
+    .acerca-de-mi p {
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+
+    .actividades {
+        height: 100%;
+    }
+
+    .habilidades {
+        width: 100%;
+        height:800px;
+        display: flex;
+        flex-direction: column; 
+        margin: 0px 0px; 
+    }
+
+    .habilidades p, .pasatiempos p {
+        font-size: 14px;   
+    }
+
+    .habilidad  {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    }
+
+    .habilidad li {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 190px;
+    margin: 0px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    border: 2px solid #e0dbdb;
+    border-radius: 10px;
+    }
+
+    .habilidad img {
+        width: 40%; 
+     }
+
+     .habilidad p, .pasatiempo p {
+       font-size: 12px;  
+     }
+
+     .pasatiempos {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column; 
+        margin: 0px 0px; 
+    }
+
+    .pasatiempo  {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 0px;
+    }
+
+    .pasatiempo li {
+        display: inline-block;
+        text-align: center;
+        width: 50%;
+        height: 190px;
+        margin: 0px;
+        padding: 0px 5px;
+        box-sizing: border-box;
+        border: 2px solid #e0dbdb;
+        border-radius: 10px;
+    }
+
+    .pasatiempo img {
+        width: 40%; 
+     }
+
+    h4 {
+        font-size: 14px;
+        padding: 5px 0px 0px;
+        }
+
+    .contacto {
+            height: 60%;
+        }
+
+    .form {
+        width: 80%;
+        left: 10%;
+        bottom: 20px;
+    }
+
+    .form-input {
+        font-size: 16px;
+    }
+
+    .form-cta {
+        font-size: 18px;
+    }
+    
+    .contacto {
+        height: 100%;
+    }
+    .contacto .social  {
+        margin-top: 10px;
+    }
+
+    .contacto .social i.fa {
+        font-size: 30px;
+        padding: 0px 0px;
+        transition: 0.3s;   
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding: 5px 0px 0px;
+    }
+}
+
